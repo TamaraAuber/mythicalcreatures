@@ -12,9 +12,9 @@ AFRAME.registerComponent('markers_start',{
       //lists of the markers
       for(var i=1; i<11; i++)
       {
-        var url="assets/marker/marker"+i+".patt";
+        var url="./assets/marker/marker"+i+".patt";
         markerURLArray.push(url);
-        markerNameArray.push('Marker_'+i);      
+        markerNameArray.push('marker_'+i);      
       }
       for(var k=0; k<18; k++)
       {
