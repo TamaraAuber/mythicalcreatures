@@ -33,8 +33,18 @@
             AFRAME.registerComponent('videohandler', {
                 init: function () {
                     var marker = this.el;
-                    this.vid = document.querySelector(".vid");
-                    console.log(this.vid);
+                    //this.vid = document.querySelector("#vid");
+
+                    switch(marker.id) {
+                        case "marker":
+                            this.vid = document.querySelector("#vid1");
+                            break;
+                        case "marker1":
+                            this.vid = document.querySelector("#vid2");
+                            break;
+                        default:
+                            // code block
+                        } 
 
                     marker.addEventListener('markerFound', function () {
                         this.toggle = true;
@@ -117,7 +127,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker"
             >
                 <a-video
                     src="#vid1"
@@ -142,7 +152,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker1"
             >
                 <a-video
                     src="#vid2"
@@ -167,7 +177,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker2"
             >
                 <a-video
                     src="#vid3"
@@ -192,7 +202,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker3"
             >
                 <a-video
                     src="#vid1"
@@ -217,7 +227,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker4"
             >
                 <a-video
                     src="#vid2"
@@ -242,7 +252,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker5"
             >
                 <a-video
                     src="#vid3"
@@ -267,7 +277,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker6"
             >
                 <a-video
                     src="#vid1"
@@ -292,7 +302,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker7"
             >
                 <a-video
                     src="#vid2"
@@ -317,7 +327,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker8"
             >
                 <a-video
                     src="#vid3"
@@ -342,7 +352,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker9"
             >
                 <a-video
                     src="#vid1"
@@ -367,7 +377,7 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                id="marker10"
             >
                 <a-video
                     src="#vid2"
